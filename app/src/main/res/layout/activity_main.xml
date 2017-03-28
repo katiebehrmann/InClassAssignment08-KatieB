@@ -13,7 +13,6 @@
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
-        android:hint="Plan Your Roadtrip!"
         android:text="Plan Your RoadTrip!"
         android:textSize="36dp" />
 
@@ -29,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_margin="8dp"
-            android:text="No places added" />
+            android:text="" />
 
     </ScrollView>
 
