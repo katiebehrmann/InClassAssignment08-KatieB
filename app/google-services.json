@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "700822248627",
+    "firebase_url": "https://inclassassignment08-katieb.firebaseio.com",
+    "project_id": "inclassassignment08-katieb",
+    "storage_bucket": "inclassassignment08-katieb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700822248627:android:03d63df5bb480aaa",
+        "android_client_info": {
+          "package_name": "com.example.android.inclassassignment08_katieb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700822248627-2dki2tvmk5jdsm6s0o2b5cf731m6tlob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgavqP2ojSnYVhDtUVbJqlzxGX1fXmdGg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

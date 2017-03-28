@@ -1,46 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_second"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.android.inclassassignment08_katieb.MainActivity">
+    tools:context="com.example.android.inclassassignment08_katieb.SecondActivity">
 
     <TextView
+        android:id="@+id/title_road_trip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Plan Your RoadTrip!"
         android:textSize="36dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:hint="Plan Your Roadtrip!" />
 
-    <ScrollView
+
+    <EditText
+        android:id="@+id/add_place"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        android:hint="Location" />
 
-        <TextView
-            android:id="@+id/display_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_margin="8dp"
-            android:text="" />
+    <EditText
+        android:id="@+id/add_miles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Miles from last location" />
 
-    </ScrollView>
+    <CheckBox
+        android:id="@+id/been_there"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have you been there?"
+        android:textSize="18dp"
+        android:layout_margin="8dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="Add A Place"
-        android:onClick="another"
+        android:text="Add"
+        android:onClick="add"
         android:layout_gravity="center" />
-
 </LinearLayout>
-
-
