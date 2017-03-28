@@ -17,6 +17,9 @@ public class RoadTrip implements Serializable {
         this.beenThere = beenThere;
     }
 
+    public RoadTrip() {
+    }
+
     public String getPlace() {
         return place;
     }

@@ -59,21 +59,13 @@ public class MainActivity extends AppCompatActivity {
     public void another(View view) {
 
         Intent intent = new Intent(this, SecondActivity.class);
-        startActivityForResult(intent, 1);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == 1 && resultCode == RESULT_OK) {
-            RoadTrip fun = (RoadTrip) data.getSerializableExtra(Keys.ROADTRIP);
-            displayList.setText(fun.toString());
-        }
+        startActivity(intent);
     }
 
     private void displayPlaces() {
         String text = "";
-        for (RoadTrip fun : roadTripList)
-            text += fun + "\n";
+        for (RoadTrip r : roadTripList)
+            text += r;
         displayList.setText(text);
     }
 }

@@ -10,18 +10,18 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Plan Your RoadTrip!"
-        android:textSize="36dp"
-        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
-        android:hint="Plan Your Roadtrip!" />
+        android:hint="Plan Your Roadtrip!"
+        android:text="Plan Your RoadTrip!"
+        android:textSize="36dp" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/display_text"
@@ -29,17 +29,17 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_margin="8dp"
-            android:text="" />
+            android:text="No places added" />
 
     </ScrollView>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_margin="8dp"
-        android:text="Add A Place"
         android:onClick="another"
-        android:layout_gravity="center" />
+        android:text="Add A Place" />
 
 </LinearLayout>
 

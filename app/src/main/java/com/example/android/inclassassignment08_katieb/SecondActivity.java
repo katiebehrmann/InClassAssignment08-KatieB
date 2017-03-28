@@ -7,12 +7,17 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class SecondActivity extends AppCompatActivity {
 
 
     private EditText addPlace;
     private EditText addMiles;
     private CheckBox beenThere;
+    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference roadTripRef = database.getReference("Road Trip");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,14 +37,12 @@ public class SecondActivity extends AppCompatActivity {
         boolean been = beenThere.isChecked();
 
         RoadTrip fun = new RoadTrip(place, miles, been);
+        roadTripRef.push().setValue(fun);
 
-        Intent data = new Intent();
-        data.putExtra(Keys.ROADTRIP, fun);
-        setResult(RESULT_OK, data);
-        finish();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+
 
     }
-
-
 }
 
